@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import '../index.css';  
+import "../index.css";
 import { RxDownload } from "react-icons/rx";
 import heroImageA from "../assets/NFT Sample A.svg";
 import heroImageB from "../assets/NFT Sample b.svg";
@@ -9,6 +9,12 @@ import heroImageD from "../assets/NFT Sample d.svg";
 import heroImageE from "../assets/NFT Sample e.svg";
 import heroImageF from "../assets/NFT Sample f.svg";
 import heroImageG from "../assets/NFT Sample g.svg";
+import heroImageH from "../assets/NFT Sample h.svg";
+import heroImageI from "../assets/NFT Sample i.svg";
+import heroImageJ from "../assets/NFT Sample j.svg";
+import heroImageK from "../assets/NFT Sample k.svg";
+import heroImageL from "../assets/NFT Sample L.svg";
+
 
 
 
@@ -43,12 +49,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero-section my-4 py-4">
+    <div className="hero-section  custom-block-margin-sm ">
       <Container>
-        <div className="text-center mb-4">
-          <h1 className="display-1 fw-semibold mb-0">Welcome to</h1>
-          <h1 className="display-1 fw-semibold  p-3 orange-text mb-0">Ileri Residentials </h1>
-          <p className="lead fs-4 fw-normal w-50 mx-auto ">
+        <div className="text-center mx-auto py-4">
+          <h1 className="display-1 fw-normal mb-0">Welcome to </h1>
+          <h1 className="display-1 fw-normal orange-text mb-0 p-3 ">
+            Ileri Residentials{" "}
+          </h1>
+          <p className="lead fs-4 fw-normal custom-width-40 pb-4 ">
             Relax, Recharge and Reconnect yourself with nature at horizon mega
             city
           </p>
@@ -56,7 +64,7 @@ const Hero = () => {
           <Button
             variant="primary"
             size="lg"
-            className="mb-4"
+            className="mb-4 fw-semibold"
             style={{
               borderRadius: "28.27px",
               backgroundColor: "#3D3D3D",
@@ -64,14 +72,14 @@ const Hero = () => {
             }}
           >
             Get Brochure
-            <RxDownload className="ms-2" />
+            <RxDownload className="ms-2 " />
           </Button>
         </div>
 
         <Container>
           <style>{keyframesStyle}</style>
           <Row>
-            <Col md={6} className="px-0">
+            <Col className="px-0">
               <div style={containerStyle}>
                 <div style={animationStyle}>
                   <img src={heroImageA} alt="Hero" style={imageStyle} />
@@ -81,6 +89,13 @@ const Hero = () => {
                   <img src={heroImageE} alt="Hero" style={imageStyle} />
                   <img src={heroImageF} alt="Hero" style={imageStyle} />
                   <img src={heroImageG} alt="Hero" style={imageStyle} />
+                  <img src={heroImageH} alt="Hero" style={imageStyle} />
+                  <img src={heroImageI} alt="Hero" style={imageStyle} />
+                  <img src={heroImageJ} alt="Hero" style={imageStyle} />
+                  <img src={heroImageK} alt="Hero" style={imageStyle} />
+                  <img src={heroImageL} alt="Hero" style={imageStyle} />
+
+
                 </div>
               </div>
             </Col>

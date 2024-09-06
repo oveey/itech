@@ -13,9 +13,9 @@ const Main = () => {
     <section className="main-section">
       <Container>
         {/* Header Section */}
-        <Row className="align-items-center mb-5 pt-5">
+        <Row className="align-items-center custom-block-margin-lg ">
           <Col md={12} className="text-center ">
-            <h1 className="display-5 fw-semibold w-75 mx-auto ">
+            <h1 className="display-5 w-75 mx-auto fw-normal ">
               Discover Our Amenities, Elevating Your Living Experience.
             </h1>
           </Col>
@@ -24,10 +24,7 @@ const Main = () => {
         {/* Video Section */}
         <Row className="justify-content-center mb-4 pt-5">
           <Col md={12} className="text-center">
-            <div
-              className="video-container"
-              style={{ maxWidth: "1056px", margin: "0 auto" }}
-            >
+            <div className="video-container rounded-sm">
               <video width="100%" height="auto" controls>
                 <source src="path_to_your_video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -36,7 +33,7 @@ const Main = () => {
           </Col>
         </Row>
 
-        <Row className=" mb-4 pt-5" >
+        <Row className=" mb-4 pt-5 custom-block-margin-lg ">
           <Col md={6} className="d-flex flex-column ">
             <div className="/">
               <h3 className="display-6 mb-4 fw-normal">Description</h3>
@@ -56,7 +53,7 @@ const Main = () => {
                   <h3>300</h3>
                   <p>SQM</p>
                 </Col>
-              
+
                 <Col xs={5} md={4} className="p-3 text-center">
                   <h3>500</h3>
                   <p>SQM</p>

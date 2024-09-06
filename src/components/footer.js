@@ -1,15 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import logo from '../assets/iTech Logo svg 2.svg'; 
-
-
+import logo from "../assets/iTech Logo svg 2.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-dark py-4 pt-5">
+    <footer className="bg-white text-dark py-4 custom-block-margin-lg custom-bottom ">
       <Container>
         <div className="mb-4">
-          <Col  className="text-center text-md-left mb-3 mb-md-3">
+          <Col className="text-center text-md-left mb-3 mb-md-3">
             <img src={logo} alt="Logo" width="150" height="50" />
           </Col>
 
@@ -44,8 +42,11 @@ const Footer = () => {
           </Col>
         </div>
         <hr className="bg-dark" />
-        <Row className="text-center">
-          <Col xs={12} className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <Row className="text-center custom-bottom ">
+          <Col
+            xs={12}
+            className="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
             <p className="mb-0">
               &copy; {new Date().getFullYear()} Itech Homes and Properties. All
               rights reserved.
@@ -75,4 +76,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
